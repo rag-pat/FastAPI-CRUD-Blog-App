@@ -78,10 +78,11 @@ Register a new user by sending a POST request to /register.
 Provide a username and password.
 2. Log In
 Obtain a JWT access token by sending a POST request to /token with valid credentials.
-3. Manage Posts
+Manage Posts
 Use your JWT token to create, search, view, and soft-delete posts.
+
 🌐 API Endpoints
-🔑 Authentication
+🔑 Authentication Routes
 Method	Endpoint	Description	Requires Auth
 POST	/register	Register a new user	❌
 POST	/token	Obtain a JWT access token	❌
@@ -99,24 +100,22 @@ Copy code
 .
 ├── app
 │   ├── __init__.py
-│   ├── main.py          # Entry point for the application
-│   ├── models.py        # SQLAlchemy models for database tables
-│   ├── schemas.py       # Pydantic models for data validation
-│   ├── crud.py          # CRUD operations for database interaction
-│   ├── database.py      # Database configuration
-│   └── auth.py          # Authentication and JWT utilities
-├── requirements.txt      # Required Python libraries
-└── .gitignore            # Ignored files
+│   ├── main.py       # Entry point for the application
+│   ├── models.py     # SQLAlchemy models for database tables
+│   ├── schemas.py    # Pydantic models for data validation
+│   ├── crud.py       # CRUD operations for database interaction
+│   ├── database.py   # Database configuration
+│   └── auth.py       # Authentication and JWT utilities
+├── requirements.txt  # Required Python libraries
+└── .gitignore        # Ignored files
 🎯 Learning Goals
 I created this project to:
 
-Learn and practice CRUD operations in FastAPI.
-Understand API development and integration with a database.
-Implement user authentication using hashed passwords and JWTs.
-Explore rate limiting for controlling API requests.
-Familiarize myself with SQLAlchemy ORM for database management.
-Gain experience in soft deletion mechanisms for data integrity.
-This project serves as a foundational step in my journey to mastering backend development!
+Practice CRUD operations with a relational database.
+Understand API development using FastAPI.
+Explore JWT-based authentication.
+Learn rate limiting and middleware in API design.
+Apply Python tools like SQLAlchemy and Pydantic
 
 📜 License
 This project is licensed under the MIT License. You are free to use, modify, and distribute it as per the terms of the license.
