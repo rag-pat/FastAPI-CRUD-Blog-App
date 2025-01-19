@@ -2,6 +2,11 @@
 
 A robust REST API built with FastAPI for managing blog posts with user authentication, rate limiting, and search capabilities.
 
+## 🎓 Learning Project
+
+This blog API is a personal project created solely for learning purposes. It demonstrates the use of FastAPI for building modern, scalable APIs with features like user authentication, rate limiting, and database management. While it is a functional application, it is not intended for production use.
+
+
 ## 🚀 Features
 
 * User authentication with JWT tokens
@@ -104,15 +109,3 @@ Once the application is running, visit:
 * `skip`: Number of records to skip (pagination)
 * `limit`: Maximum number of records to return
 * `query`: Search term for post search endpoint
-
-## 👥 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
